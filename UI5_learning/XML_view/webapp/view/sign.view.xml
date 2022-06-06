@@ -1,0 +1,7 @@
+<mvc:View controllerName = "home.controller.sign"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:ui = "sap.ui">
+<Button id = "idBtn1" text = "SignIn" press = "onSignIn" type = "Attention" icon = "sap-icon://accept"></Button>
+<Button id = "idBtn2" text = "SignUp" press = "onSignUp" type = "Accept" icon = "sap-icon://write-new"></Button>
+</mvc:View>

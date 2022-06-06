@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script id = "sap.ui.bootstraping"
+                src = "https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_fiori_3_dark"
+                data-sap-ui-resourceroots = '{
+                    "home": "./"
+                }'>
+
+        </script>
+
+        <script>
+            var oView = new sap.ui.view({
+                viewName: "home.view.sign",
+                type: "XML",
+                id: "idXML"
+            });
+            oView.placeAt("idDiv1");
+        </script>
+
+    </head>
+
+    <body>
+        <div id = "idDiv1"></div>
+    </body>
+
+</html>
