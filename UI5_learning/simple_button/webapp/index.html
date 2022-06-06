@@ -9,8 +9,20 @@
         "home" : "./"
     }'>
     </script>
+
+    <script>
+        var oBtn = new sap.m.Button("idBtn", {
+            text : "Click Me",
+            icon : "sap-icon://accept",
+            press : function(){
+                alert("Thanks for clicking me");
+            }
+        });
+
+        oBtn.placeAt("content");
+    </script>
     </head>
-    <body>
-        this is sample Bootstraping application.
+
+    <body id="content">
     </body>
 </html>
