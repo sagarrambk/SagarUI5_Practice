@@ -19,10 +19,25 @@
             }
         });
 
+        var oBtn2 = new sap.m.Button("idBtn1",{
+            text : "No Click",
+            icon : "sap-icon://decline",
+            press : function(){
+                alert("I told not to click");
+            }
+
+        });
         oBtn.placeAt("content");
+        oBtn2.placeAt("view1");
     </script>
     </head>
 
-    <body id="content">
+    <body>
+        <div id = "view1">
+
+        </div>
+        <div id = "content">
+
+        </div>
     </body>
 </html>

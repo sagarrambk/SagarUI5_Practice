@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1st MVC App</title>
+    <script 
+        id="sap.ui.bootstraping" 
+        src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m" 
+        data-sap-ui-theme="sap_belize" 
+        data-sap-ui-resourceroots='{
+        "home":"./"
+    }'>
+    </script>
+    <script>
+        var oView1 = new sap.ui.view({
+            viewName: "home.view.sign",
+            type: "JS",
+            id: "idJS"
+        });
+        oView1.placeAt("idDiv1");
+    </script>
+</head>
+
+<body>
+</body>
+<div id="idDiv1"></div>
+
+</html>
