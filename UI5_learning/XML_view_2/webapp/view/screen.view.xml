@@ -1,0 +1,16 @@
+<mvc:View controllerName = "home.controller.screen"
+ xmlns = "sap.m"
+ xmlns:mvc = "sap.ui.core.mvc"
+ xmlns:ui = "sap.ui">
+ <VBox class="sapUiSmallMargin">
+<Label text = "Select the Radio Button" labelFor="GroupA"/>
+<RadioButtonGroup id = "GroupA">
+    <RadioButton text = "option 1" selected = "true"/>
+    <RadioButton text="Option 2" />
+	<RadioButton text="Option 3" />
+	<RadioButton text="Option 4" />
+	<RadioButton text="Option 5" />
+</RadioButtonGroup>
+</VBox>
+
+</mvc:View>
