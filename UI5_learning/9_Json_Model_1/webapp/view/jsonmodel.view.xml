@@ -6,19 +6,19 @@ xmlns:form = "sap.ui.layout.form">
 
 <form:SimpleForm editable = "true"> 
 <Label text="Name"></Label>
-<Input id="idEname" width="30%" value="{/Person/Name}"></Input>
+<Input id="idEname" width="30%" value="{/Person/Name}" editable = "{/Person/edit}" ></Input>
 
 <Label text="ID"></Label>
-<Input id="idEid" width="30%" value="{/Person/Id}"></Input>
+<Input id="idEid" width="30%" value="{/Person/Id}" editable = "{/Person/edit}"></Input>
 
 <Label text="City"></Label>
-<Input id="idESkil" width="30%" value="{/Person/City}"></Input>
+<Input id="idESkil" width="30%" value="{/Person/City}" editable = "{/Person/edit}"></Input>
 
 <Label text="Pin"></Label>
-<Input id="idELoc" width="30%" value="{/Person/Pin}"></Input>
+<Input id="idELoc" width="30%" value="{/Person/Pin}" editable = "{/Person/edit}"></Input>
 
 <Label text="Contact"></Label>
-<Input id="idESal" width="30%" value="{/Person/Contact}"></Input>
+<Input id="idESal" width="30%" value="{/Person/Contact}" editable = "{/Person/edit}"></Input>
 </form:SimpleForm>
 </mvc:View>
 

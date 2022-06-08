@@ -13,7 +13,8 @@ sap.ui.define([
                     "Id": "007",
                     "City": "Hyderabad",
                     "Pin": "500000",
-                    "Contact": "123456"
+                    "Contact": "123456",
+                    "edit": false
                 }
             }
             // now we need to creae model and link above payload to the model
