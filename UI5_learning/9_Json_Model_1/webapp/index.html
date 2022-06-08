@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Page Design </title>
+    <script id="sap.ui.bootstraping" src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_belize" data-sap-ui-resourceroots='{
+                "home": "./"
+            }'>
+
+            </script>
+    <script>
+        var oView = new sap.ui.view({
+            viewName : "home.view.jsonmodel",
+            type : "XML",
+            id : "idXML"
+        });
+        oView.placeAt("idDiv");
+    </script>
+</head>
+
+<body>
+    <div id ="idDiv"></div>
+</body>
+
+</html>

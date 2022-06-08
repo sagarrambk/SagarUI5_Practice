@@ -1,0 +1,25 @@
+<mvc:View controllerName = "home.controller.simple_form"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form">
+
+<form:SimpleForm editable = "true" labelSpanL="S">
+<core:Title icon ="sap-icon://person-placeholder" text="Personal Details"></core:Title>
+<Label text = "First Name"></Label>
+<Input placeholder="Enter First Name here" width="40%"></Input>
+
+<Label text = "Last Name"></Label>
+<Input placeholder="Enter Last Name here" width="40%"></Input>
+
+<Label text = "Mobile/Phone"></Label>
+<Input placeholder="Enter Mobile/Phone here" width="40%"></Input>
+
+<Label text = "Place"></Label>
+<Input placeholder="Enter Place here" width="40%"></Input>
+
+</form:SimpleForm>
+<!--<Button id="idBtn1" press="onSave" icon="sap-icon://accept" text="Save"></Button>
+<Button id="idBtn2" press="onReset" icon="sap-icon://reset" text="Reset"></Button>-->
+
+</mvc:View>
