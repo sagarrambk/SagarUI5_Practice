@@ -1,0 +1,35 @@
+<mvc:View controllerName = "home.controller.school"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:form = "sap.ui.layout.form">
+
+<form:SimpleForm editable = "true">
+<Label text="School Name"></Label>
+<Input id="ScName" width="30%" value="{/School/ScName}" editable = "{/School/edit}" ></Input>
+
+<Label text="School City"></Label>
+<Input id="ScCity" width="30%" value="{/School/ScCity}" editable = "{/School/edit}"></Input>
+
+<Label text="School Branch"></Label>
+<Input id="ScBranch" width="30%" value="{/School/ScBranch}" editable = "{/School/edit}"></Input>
+
+<Label text="School Pin"></Label>
+<Input id="ScPin" width="30%" value="{/School/ScPin}" editable = "{/School/edit}"></Input>
+
+<Label text="School Contact"></Label>
+<Input id="ScContact" width="30%" value="{/School/ScContact}" editable = "{/School/edit}"></Input>
+</form:SimpleForm>
+</mvc:View>
+
+<!--
+    {
+    "School":{
+       "ScName":"Hyderabad Public School",
+       "ScCity":"Hyderabad",
+       "ScBranch":"Hi-Tech City",
+       "ScPin":"500000",
+       "ScContact":"040-123456789",
+       "edit":false
+    }
+ }
+-->

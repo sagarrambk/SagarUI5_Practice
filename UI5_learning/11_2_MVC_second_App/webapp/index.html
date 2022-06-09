@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First MVC Model App</title>
+        <script id = "sap.ui.bootstraping"
+                src = "https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_belize"
+                data-sap-ui-resourceroots = '{
+                    "home" : "./"
+                }'></script>
+        <script>
+            var oStudent = new sap.ui.view({
+                viewName : "home.view.student",
+                type : "XML",
+                id : "idXML"
+            });
+
+            var oSchool = new sap.ui.view({
+               viewName : "home.view.school",
+                type : "XML"
+            });
+            oStudent.placeAt("idStudent");
+            oSchool.placeAt("idSchool");
+        </script>
+    </head>
+    <body>
+        <div id = "idStudent"></div>
+        <div id = "idSchool"></div>
+    </body>
+</html>
+
+
+<!--
+    https://theia-workspaces-ws-cbb5v.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/SagarUI5_Practice/UI5_learning/11_2_MVC_second_App/webapp/index.html
+-->

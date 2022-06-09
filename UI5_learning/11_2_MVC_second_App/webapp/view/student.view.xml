@@ -1,0 +1,35 @@
+<mvc:View controllerName = "home.controller.student"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:form = "sap.ui.layout.form">
+
+<form:SimpleForm editable = "true">
+<Label text="Student Name"></Label>
+<Input id="StName" width="30%" value="{/Student/StName}" editable = "{/Student/edit}" ></Input>
+
+<Label text="Student Class"></Label>
+<Input id="StClass" width="30%" value="{/Student/StClass}" editable = "{/Student/edit}"></Input>
+
+<Label text="Student ID"></Label>
+<Input id="StId" width="30%" value="{/Student/StId}" editable = "{/Student/edit}"></Input>
+
+<Label text="Student Village"></Label>
+<Input id="StVillage" width="30%" value="{/Student/StVillage}" editable = "{/Student/edit}"></Input>
+
+<Label text="Student Contact"></Label>
+<Input id="StContact" width="30%" value="{/Student/StContact}" editable = "{/Student/edit}"></Input>
+</form:SimpleForm>
+</mvc:View>
+
+<!--
+    {
+    "Student":{
+       "StName":"Sagar",
+       "StClass":"10 th",
+       "StId":"Hyd2020999",
+       "StVillage":"Hyderabad",
+       "StContact":"123456",
+       "edit":false
+    }
+ }
+-->
