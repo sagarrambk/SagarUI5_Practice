@@ -1,0 +1,16 @@
+{
+    "Employee": {
+        "EmployeeName": "Sagar",
+        "EmployeeId": "001",
+        "Skills": [
+            "SAP ABAP",
+            "OOABAP",
+            "SAP IDOCS",
+            "SMARTFORMS",
+            "Enhancements"
+        ],
+        "Location": "Hyderabad",
+        "Salary": "999999999",
+        "Edit": false
+    }
+}

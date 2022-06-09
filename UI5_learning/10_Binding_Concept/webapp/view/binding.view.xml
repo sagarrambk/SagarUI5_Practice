@@ -1,0 +1,64 @@
+<mvc:View controllerName="home.controller.binding"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form">
+
+<form:SimpleForm editable="true">
+<Label text="Name"></Label>
+<!--Type-1 property Binding-->
+<Input id="idEname" width="30%" value="{/Person/Name}" editable = "{/Person/edit}" ></Input>
+
+<Label text="ID"></Label>
+<!--Type-2 property Binding-->
+<Input id="idEid" width="30%" value="{path:'/Person/Id'}" editable = "{/Person/edit}"></Input>
+
+<Label text="City"></Label>
+<!--Type-3 property Binding this shoud be done in contoller section-->
+<!-- Below is the code before do the property Binding
+    <Input id="idCity" width="30%"  editable = "{/Person/edit}"></Input>-->
+<!-- below is the code after doing propery binding-->
+<Input id="idCity" width="30%"  editable = "{/Person/edit}"></Input>
+<!-- below is the code we used in controller to do the Type-3 property Binding
+            // 1st Read the field details using its' id
+             var oldCity = this.getView().byId("idCity");
+            // Bind the value to the field 
+            oldCity.bindValue("/Person/City");
+-->
+
+<Label text="Pin"></Label>
+<!--Type-4 property Binding this shoud be done in contoller section-->
+
+<!-- Below is the code before do the property Binding
+    <Input id="idPin" width="30%" value="{/Person/Pin}" editable = "{/Person/edit}"></Input>
+-->
+<Input id="idPin" width="30%"  editable = "{/Person/edit}"></Input>
+<!--  below is the code we used in controller to do the Type-4 property Binding
+            // 1st Read the field details using its' id
+            var oldPin = this.getView().byId("idPin");
+            // Bind the value to the field 
+            oldPin.bindProperty("value", "/Person/Pin");
+-->
+
+<Label text="Contact"></Label>
+<Input id="idContact" width="30%" value="{/Person/Contact}" editable = "{/Person/edit}"></Input>
+</form:SimpleForm>
+
+</mvc:View>
+
+<!--
+    We have 4 ways to do property binding.
+1)	Property = {Address / Path} – which we saw in our previous example like “value="{/Employee/EmployeeName}” in the XML view. Before we bind this, we created Model object and attached this model object to the view then we mentioned Address / Path of the model in the view field.
+Example - <Input id="idEname" width="30%" value="{/Employee/EmployeeName}"></Input>
+
+2)	Property = {path: ‘Address / Path’} - this similar to the above example only, difference is we just mention “path:” based binding before the “Address / Path” and enclose it with “single quote” like below.
+Example - <Input id="idEname" width="30%" value="{path: '/Employee/EmployeeName'}"></Input>
+The other 2 way we mention it in controller section.
+3)	bindValue(“Address / Path”):  - this we need to do it in the controller section, to do this first we need to get the reference of the screen field using this.getView().byId(); and keep it in a variable like below.
+var oIdESkil = this.getView().byId("idESkil");
+then use bindValue(“Address / Path”)  to link the screen field like below.
+oIdESkil.bindValue("/Employee/Skills");
+4)	bindProperty("value", "/company/name") – this is also need to be done in controller section, to do this we need to get the reference of the screen field using this.getView().byId(); and keep it in a variable like below.
+var oIdELoc = this.getView().byId("idELoc"); 
+then use bindProperty("value", "/company/name") to link the screen field like below.
+oIdELoc.bindProperty("value", "/Employee/Location");-->

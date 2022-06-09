@@ -1,0 +1,32 @@
+<mvc:View controllerName = "home.controller.screen1"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form">
+
+<form:SimpleForm >
+<Label text="Employee Name"></Label>
+<!-- 1st type property binding Property = {Address / Path} -->
+<Input id="idEname" width="30%" value="{/Employee/EmployeeName}" editable="{/Employee/Edit}"></Input>
+
+<Label text="EMP ID"></Label>
+<!-- 2nd type property binding Property = {path: ‘Address / Path’}  -->
+<!-- make sure you mentioned data-sap-ui-compatVersion='edge'  or 
+      data-sap-ui-bindingSyntax="complex" in bootstrap to use "path:" binding-->
+<Input id="idEid" width="30%" value="{path:'/Employee/EmployeeId'}" editable="{/Employee/Edit}"></Input>
+
+<Label text="EMP Skill/Tech"></Label>
+<!-- we are not binding any property here, so removed "value" property here i.e (value="{/Employee/Skills}")-->
+<!-- we bind it in the controller section using 3rd property binding technic-->
+<Input id="idESkil" width="30%"  editable="{/Employee/Edit}"></Input>
+
+<Label text="EMP Location"></Label>
+<!-- we are not binding any property here, so removed "value" property here i.e (value="{/Employee/Location}")-->
+<!-- we bind it in the controller section using 4th property binding technic-->
+<Input id="idELoc" width="30%"  editable="{/Employee/Edit}"></Input>
+
+<Label text="EMP Salary"></Label>
+<Input id="idESal" width="30%" value="{/Employee/Salary}" editable="{/Employee/Edit}"></Input>
+</form:SimpleForm>
+</mvc:View>
+

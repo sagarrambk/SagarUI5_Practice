@@ -1,0 +1,10 @@
+{
+    "Student": {
+        "StudentName": "Surya",
+        "StudentId": "007",
+        "Class": "Upperclass",
+        "Location": "Hyderabad",
+        "Fee": "10000",
+        "Edit": false
+    }
+}

@@ -12,13 +12,13 @@ xmlns:form = "sap.ui.layout.form">
 <Input id="idEid" width="30%" value="{/Person/Id}" editable = "{/Person/edit}"></Input>
 
 <Label text="City"></Label>
-<Input id="idESkil" width="30%" value="{/Person/City}" editable = "{/Person/edit}"></Input>
+<Input id="idCity" width="30%" value="{/Person/City}" editable = "{/Person/edit}"></Input>
 
 <Label text="Pin"></Label>
-<Input id="idELoc" width="30%" value="{/Person/Pin}" editable = "{/Person/edit}"></Input>
+<Input id="idPin" width="30%" value="{/Person/Pin}" editable = "{/Person/edit}"></Input>
 
 <Label text="Contact"></Label>
-<Input id="idESal" width="30%" value="{/Person/Contact}" editable = "{/Person/edit}"></Input>
+<Input id="idContact" width="30%" value="{/Person/Contact}" editable = "{/Person/edit}"></Input>
 </form:SimpleForm>
 </mvc:View>
 

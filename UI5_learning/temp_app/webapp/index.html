@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using Model Concept</title>
+    <script id="sap.ui.bootstrap" 
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m" 
+            data-sap-ui-theme="sap_belize" 
+            data-sap-ui-bindingSyntax="complex"
+            data-sap-ui-resourceroots='{
+            "home":"./"
+        }'>
+        </script>
+
+    <script>
+        var oView1 = new sap.ui.view({
+            viewName: "home.view.screen1",
+            type: "XML",
+            id: "idXML"
+        });      
+        oView1.placeAt("idDiv1");
+
+        var oView2 = new sap.ui.view({
+            viewName: "home.view.screen2",
+            type: "XML"
+        });
+        oView2.placeAt("idDiv2");
+    </script>
+</head>
+
+<body>
+    <div id="idDiv1"></div>
+    <div id="idDiv2"></div>
+</body>
+
+</html>
