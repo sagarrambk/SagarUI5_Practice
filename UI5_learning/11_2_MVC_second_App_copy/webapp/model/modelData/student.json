@@ -1,0 +1,10 @@
+{
+    "Student":{
+       "StName":"Sagar",
+       "StClass":"10 th",
+       "StId":"Hyd2020999",
+       "StVillage":"Hyderabad",
+       "StContact":"123456",
+       "edit":false
+    }
+ }

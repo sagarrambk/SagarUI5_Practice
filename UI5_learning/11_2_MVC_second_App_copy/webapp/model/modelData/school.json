@@ -1,0 +1,10 @@
+{
+    "School":{
+       "ScName":"Hyderabad Public School",
+       "ScCity":"Hyderabad",
+       "ScBranch":"Hi-Tech City",
+       "ScPin":"500000",
+       "ScContact":"040-123456789",
+       "edit":false
+    }
+ }
