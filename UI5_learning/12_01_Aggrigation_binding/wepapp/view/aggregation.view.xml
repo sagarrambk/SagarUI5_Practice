@@ -1,0 +1,69 @@
+<mvc:View controllerName="home.controller.aggregation"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form"
+xmlns:table = "sap.ui.table">
+
+<table:Table rows ="{/stD}"> 
+    <table:columns>
+        <table:Column width="10%">
+            <table:label>
+                <Label text = "{/stH/stN}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{stName}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column width="10%">
+            <table:label>
+                <Label text = "{/stH/stC}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{stClass}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column width="5%"> 
+            <table:label>
+                <Label text = "{/stH/stR}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{stResult}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/stG}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{stGrade}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/stGe}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Select selectedKey = "{gender}">
+                <items>
+                        <core:Item text="Male" key="M"></core:Item>
+                        <core:Item text="Female" key="F"></core:Item>
+                        <core:Item text="Others" key="O"></core:Item>
+                        <core:Item text="No intreast" key="N"></core:Item>
+                </items>
+                </Select>
+            </table:template>
+       </table:Column>
+
+    </table:columns>
+</table:Table>
+</mvc:View>
