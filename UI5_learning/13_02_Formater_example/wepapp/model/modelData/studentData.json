@@ -1,0 +1,80 @@
+{
+    "stH": {
+        "XFLD_stN": "Student Name",
+        "XFLD_stC": "Student Class",
+        "XFLD_stR": "Result",
+        "XFLD_stG": "Grade",
+        "XFLD_stGe": "Gender",
+        "XFLD_stFe": "Studend Fee",
+        "XFLD_stDob": "Date of Birth",
+        "XFLD_stStauts": "Current Staus"
+    },
+    "stD": [
+        {
+            "stName": "Suresh",
+            "stClass": "MCA",
+            "stResult": "P",
+            "stGrade": 500,
+            "gender": "M",
+            "fee": 10000,
+            "curr": "INR",    
+            "dob": 22091983,
+            "status": "P"
+        },
+        {
+            "stName": "Sravanthi",
+            "stClass": "Btech",
+            "stResult": "P",
+            "stGrade": 1000,
+            "gender": "F",
+            "fee": 20000,
+            "curr": "INR",
+            "dob": 19901005,
+            "status": "P"
+        },
+        {
+            "stName": "Sahi",
+            "stClass": "4th",
+            "stResult": "P",
+            "stGrade": 5000,
+            "gender": "F",
+            "fee": 30000,
+            "curr": "INR",
+            "dob": 20052013,
+            "status": "A"
+        },
+        {
+            "stName": "Srini",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": 100000,
+            "gender": "F",
+            "fee": 40000,
+            "curr": "INR",
+            "dob": 26052020,
+            "status": "A"
+        },
+        {
+            "stName": "Ramu",
+            "stClass": "XXX",
+            "stResult": "N",
+            "stGrade": 400,
+            "gender": "O",
+            "fee": 50000,
+            "curr": "CAD",
+            "dob": 19900508,
+            "status": "N"
+        },
+        {
+            "stName": "Chandu",
+            "stClass": "YYYY",
+            "stResult": "F",
+            "stGrade": 600,
+            "gender": "N",
+            "fee": 60000,
+            "curr": "EUR",
+            "dob": 22091983,
+            "status": "N"
+        }
+    ]
+}

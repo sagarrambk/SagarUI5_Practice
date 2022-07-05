@@ -1,0 +1,53 @@
+{
+    "stH": {
+        "stN": "Student Name",
+        "stC": "Student Class",
+        "stR": "Result",
+        "stG": "Grade",
+        "stGe": "Gender"
+    },
+    "stD": [
+        {
+            "stName": "Suresh",
+            "stClass": "MCA",
+            "stResult": "P",
+            "stGrade": "A",
+            "gender": "M"
+        },
+        {
+            "stName": "Sravanthi",
+            "stClass": "Btech",
+            "stResult": "P",
+            "stGrade": "B",
+            "gender": "F"
+        },
+        {
+            "stName": "Sahi",
+            "stClass": "4th",
+            "stResult": "P",
+            "stGrade": "B",
+            "gender": "F"
+        },
+        {
+            "stName": "Srini",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": "A+++",
+            "gender": "F"
+        },
+        {
+            "stName": "Ramu",
+            "stClass": "XXX",
+            "stResult": "N",
+            "stGrade": "B",
+            "gender" : "O"
+        },
+        {
+            "stName": "Chandu",
+            "stClass": "YYYY",
+            "stResult": "F",
+            "stGrade": "B",
+            "gender" : "N"
+        }
+    ]
+}

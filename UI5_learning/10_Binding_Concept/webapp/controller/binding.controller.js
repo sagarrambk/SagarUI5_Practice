@@ -1,25 +1,25 @@
 sap.ui.define([
-"sap/ui/core/mvc/Controller",
-"sap/ui/model/json/JSONModel"
-], function(Controller, JSONModel) {
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/json/JSONModel"
+], function (Controller, JSONModel) {
     'use strict';
     return Controller.extend("home.controller.binding", {
-        onInit : function(){
+        onInit: function () {
             var oJsonData = {
-                "Person":{
-                    "Name":"Sagar",
+                "Person": {
+                    "Name": "Sagar",
                     "Id": "007",
                     "City": "Hyderabad",
-                    "Pin" : "500000",
-                    "Contact":"123456",
-                    "Edit":false
+                    "Pin": "500000",
+                    "Contact": "123456",
+                    "Edit": false
                 }
             }
             var oJsonModel = new JSONModel(oJsonData);
             this.getView().setModel(oJsonModel);
             //Type-3 property Binding 
             // 1st Read the field details using its' id
-             var oldCity = this.getView().byId("idCity");
+            var oldCity = this.getView().byId("idCity");
             // Bind the value to the field 
             oldCity.bindValue("/Person/City");
 
@@ -27,7 +27,7 @@ sap.ui.define([
             var oldPin = this.getView().byId("idPin");
             // Bind the value to the field 
             oldPin.bindProperty("value", "/Person/Pin");
-        }
+        },
     });
 });
 

@@ -1,0 +1,153 @@
+<mvc:View controllerName="home.controller.aggregation"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form"
+xmlns:table = "sap.ui.table">
+
+<table:Table rows ="{/stD}" alternateRowColors="true" visibleRowCount="7" selectionMode = "Single" rowSelectionChange = "onRowSelectionChange"> 
+<table:toolbar>
+    <Toolbar>
+        <Button icon="sap-icon://delete" press="deleteRow" />
+    </Toolbar>
+</table:toolbar>
+    <table:columns>
+        <table:Column width="10%">
+            <table:label>
+                <Label text = "{/stH/XFLD_stN}"> </Label>
+            </table:label>
+            <table:template>            
+            <Text  text = "{path: 'stName', formatter: '.change.convertUpperCase'}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column width="10%">
+            <table:label>
+                <Label text = "{/stH/XFLD_stC}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{stClass}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column width="15%"> 
+            <table:label>
+                <Label text = "{/stH/XFLD_stR}"> </Label>
+            </table:label>
+
+            <table:template>
+            <Text text="{stResult}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/XFLD_stG}"> </Label>
+            </table:label>
+
+            <table:template>
+              <Text text="{stGrade}"></Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/XFLD_stGe}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Select selectedKey = "{gender}">
+                <items>
+                        <core:Item text="Male" key="M"></core:Item>
+                        <core:Item text="Female" key="F"></core:Item>
+                        <core:Item text="Others" key="O"></core:Item>
+                        <core:Item text="Not Interested" key="N"></core:Item>
+                </items>
+                </Select>
+            </table:template>
+       </table:Column>
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/XFLD_stFe}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{
+                             parts: [ {path: 'fee'}, {path: 'curr'} ], 
+                            formatter: '.change.formatCurrency'
+                             }"> </Text>
+            </table:template>
+       </table:Column>
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/XFLD_stDob}"> </Label>
+            </table:label>
+
+            <table:template>
+                <Text text="{dob}"></Text>
+            </table:template>
+       </table:Column>
+
+
+        <table:Column>
+            <table:label>
+                <Label text = "{/stH/XFLD_stStauts}"> </Label>
+            </table:label>
+
+            <table:template>
+                <!--<Text text="{path: 'status', formatter:'.change.statusOfStudent'}"></Text>-->
+                <ObjectStatus text="{path: 'status', formatter:'.change.statusOfStudent'}"
+                            state="{path: 'status', formatter:'.change.statusColor'}"/>
+            </table:template>
+       </table:Column>
+
+    </table:columns>
+</table:Table>
+
+<form:SimpleForm editable="true" id="idSimpleForm">
+<core:Title text="Student details" icon="sap-icon://study-leave"></core:Title>  
+
+   <Label text="{/stH/XFLD_stN}"></Label>
+   
+   <Input id='idSName' placeholder="Student Name" width="50%" value="{path: 'stName', formatter: '.change.convertUpperCase'}" editable="{/student/edit}"></Input>
+   <!--<Input id='idSName' placeholder="Student Name" width="50%" 
+   value="{path: 'stD/stName', formatter: '.convertUpperCase'}" editable="{/student/edit}"></Input>-->
+
+   <Label text="{/stH/XFLD_stC}"></Label>
+   
+   <Input id='idStC' placeholder="Student Class" width="50%" value="{stClass}" editable="{/student/edit}"></Input> 
+
+   <Label text="{/stH/XFLD_stR}"></Label>
+   
+   <Input id='idStR' placeholder="Result" width="50%" value="{stResult}" editable="{/student/edit}"></Input> 
+
+   <Label text="{/stH/XFLD_stG}"></Label>
+
+   <Input id='idStG' placeholder="Grade" width="50%" value="{stGrade}" editable="{/student/edit}"></Input> 
+
+   <Label text="{/stH/XFLD_stGe}"></Label>
+
+<Input id='idstGe' placeholder="Gender" width="50%" value="{gender}" editable="{/student/edit}"></Input> 
+
+
+   <Label text="{/stH/XFLD_stFe}"></Label>
+
+<Input id='idstFee' placeholder="Fee Details" width="50%" value="{
+                             parts: [ {path: 'fee'}, {path: 'curr'} ], 
+                            formatter: '.change.formatCurrency'
+                             }" editable="{/student/edit}"></Input> 
+
+   <Label text="{/stH/XFLD_stDob}"></Label>
+
+<Input id='idstDob' placeholder="Date of Birth" width="50%" value="{dob}" editable="{/student/edit}"></Input> 
+
+   <Label text="{/stH/XFLD_stStauts}"></Label>
+
+<Input id='idstStatus' placeholder="Status of student" width="50%" 
+value="{path: 'status', formatter:'.change.statusOfStudent'}" editable="{/student/edit}"></Input> 
+
+</form:SimpleForm>
+</mvc:View>
