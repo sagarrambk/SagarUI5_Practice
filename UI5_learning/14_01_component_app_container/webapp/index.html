@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Component_App_Controller</title>
+    <!-- in this example all the student names will appear in capital letters -->
+    <script id="sap.ui.bootstraping" src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_belize" data-sap-ui-bindingSyntax="complex"
+        data-sap-ui-resourceroots='{
+                   "home" : "./"
+               }'>
+
+            </script>
+
+    <script>
+        var oComponent = new sap.ui.core.ComponentContainer({
+            name: "home"
+        });
+        oComponent.placeAt("container")
+    </script>
+
+</head>
+
+<body>
+    <div id="container"> </div>
+</body>
+
+</html>

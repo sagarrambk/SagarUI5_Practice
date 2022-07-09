@@ -1,0 +1,43 @@
+<mvc:View controllerName = "home.controller.registration"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form"
+xmlns:table = "sap.ui.table">
+
+<form:SimpleForm editable="true">
+<core:Title text="Student details" icon="sap-icon://study-leave"></core:Title>  
+
+   <Label text="Student Name"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idSName' placeholder="Student Name" width="50%"  ></Input> 
+
+
+   <Label text="Student Class"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idStC' placeholder="Student Class" width="50%" ></Input> 
+
+   <Label text="Result"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idStR' placeholder="Result" width="50%" ></Input> 
+
+   <Label text="Grade"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idStG' placeholder="Grade" width="50%" ></Input> 
+
+   <Label text="Gender"></Label>
+   <!-- 1st type of property binding -->
+<Input id='idstGe' placeholder="Gender" width="50%" ></Input> 
+
+   <Label text="User Name"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idUName' placeholder="User Name" width="50%"  ></Input> 
+
+
+   <Label text="Password"></Label>
+   <!-- 1st type of property binding -->
+   <Input id='idPass' placeholder="Password" width="50%" ></Input> 
+</form:SimpleForm>
+
+<Button text = "Submit" press = "onSubmit"/>
+</mvc:View>

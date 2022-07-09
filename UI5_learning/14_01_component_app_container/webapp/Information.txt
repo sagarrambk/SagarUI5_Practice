@@ -1,0 +1,3 @@
+This is just a skeliton only - it has the structure of component.js files and App.controller.js & App.view.xml
+with this example we know that how we need to define component.js and App.controller.js & App.view.xml
+in this we learn how to link component.js and App.controller.js & App.view.xml.

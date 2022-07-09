@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc"
+      xmlns = "sap.m"
+      controllerName = "home.controller.screen2">
+<Label text="This is Screen2"></Label>
+ <Button text="Go To Screen1" icon="sap-icon://action" press="goToScreen1"></Button>
+</mvc:View>
