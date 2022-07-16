@@ -1,0 +1,89 @@
+{
+    "_version": "1.4.0",
+    "sap.app": {
+        "_version": "1.14.0",
+        "id": "home",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "Manifest File",
+        "description": "Using Manifest file",
+        "applicationVersion": {
+            "version": "1.14.0"
+        }
+    },
+    "sap.ui": {
+        "_version": "1.4.0",
+        "technology": "UI5",
+        "icons": {
+            "favIcon": "",
+            "icon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        },
+        "supportedThemes": [
+            "sap_belize",
+            "sap_belize_plus"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.4.0",
+        "rootView": {
+            "viewName": "home.view.App",
+            "type": "XML",
+            "id": "idAppView"
+        },
+        "dependencies": {
+            "minUI5Version": "1.103.0 ",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/modelData/studentData.json"
+            },
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleUrl": "i18n/i18n.properties"
+                }
+            }
+        },
+        "routing": {
+            "config": {
+                "viewPath": "home.view",
+                "viewType": "XML",
+                "controlId": "appCon"
+            },
+            "routes": [{
+                    "name": "default",
+                    "target": ["mPage", "dPage"],
+                    "pattern": ""
+                }],
+            "targets": {
+                "mPage":{
+                    "viewName": "mscreen",
+                    "controlAggregation": "masterPages"
+                },
+                "dPage": {
+                    "viewName": "dscreen",
+                    "controlAggregation": "detailPages"
+                }
+            }
+        }
+    }
+}

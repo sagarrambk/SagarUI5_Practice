@@ -1,0 +1,19 @@
+<mvc:View controllerName="home.controller.dscreen"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form"
+xmlns:table = "sap.ui.table">
+<!--<List items ="{/stD}" headerText="Products" id="idList">
+    <ObjectListItem
+    intro = "{stName}"
+    title = "{stClass}"
+    type="Active"
+    number = "{stResult}"
+    numberUnit="{gender}"
+    press=".onListItemPress"
+    >
+    </ObjectListItem>
+
+</List>-->
+</mvc:View>

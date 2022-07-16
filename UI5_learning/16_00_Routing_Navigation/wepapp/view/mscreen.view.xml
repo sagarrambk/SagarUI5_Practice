@@ -1,15 +1,15 @@
-<mvc:View controllerName="home.controller.aggregation"
+<mvc:View controllerName="home.controller.mscreen"
 xmlns = "sap.m"
 xmlns:mvc = "sap.ui.core.mvc"
 xmlns:core = "sap.ui.core"
 xmlns:form = "sap.ui.layout.form"
 xmlns:table = "sap.ui.table">
-<List items ="{/stD}" id="idList">
+<List items ="{/stD}" headerText="Products" id="idList">
     <ObjectListItem
-    intro = "{stH/stN}"
-    title = "{stName}"
+    intro = "{stName}"
+    title = "{stClass}"
     type="Active"
-    number = "{stClass}"
+    number = "{stResult}"
     numberUnit="{gender}"
     press=".onListItemPress"
     >
