@@ -1,0 +1,29 @@
+<mvc:View controllerName = "home.controller.data"
+        xmlns:mvc = "sap.ui.core.mvc"
+        xmlns = "sap.m"
+        xmlns:core = "sap.ui.core"
+        xmlns:form = "sap.ui.layout.form"
+        xmlns:table = "sap.ui.table">
+
+
+<form:SimpleForm editable="true">
+<core:Title text="{i18n>s_details}" icon="sap-icon://study-leave"></core:Title>  
+
+   <Label text="{i18n>s_name}"></Label>
+   <Input id='idSName'  width="50%"  value="{/stD/stName}" editable="false"></Input> 
+
+
+   <Label text="{i18n>s_class}"></Label>
+   <Input id='idStC' placeholder="Student Class" width="50%" value="{/stD/stClass}" editable="false"></Input> 
+
+   <Label text="{i18n>s_result}"></Label>
+   <Input id='idStR' placeholder="Result" width="50%" value="{/stD/stResult}" editable="false"></Input> 
+
+   <Label text="{i18n>s_grade}"></Label>
+   <Input id='idStG' placeholder="Grade" width="50%" value="{/stD/stGrade}" editable="false"></Input> 
+
+   <Label text="{i18n>s_gender}"></Label>
+<Input id='idstGe' placeholder="Gender" width="50%" value="{/stD/gender}" editable="false"></Input> 
+
+</form:SimpleForm>
+</mvc:View>

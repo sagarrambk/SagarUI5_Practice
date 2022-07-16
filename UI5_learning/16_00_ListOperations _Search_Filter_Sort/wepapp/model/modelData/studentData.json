@@ -1,0 +1,67 @@
+{
+    "stH": {
+        "stN": "Student Name",
+        "stC": "Student Class",
+        "stR": "Result",
+        "stG": "Grade",
+        "stGe": "Gender"
+    },
+    "stD": [
+        {
+            "stName": "Suresh",
+            "stClass": "MCA",
+            "stResult": "P",
+            "stGrade": "A",
+            "gender" : "M"
+        },
+        {
+            "stName": "Sravanthi",
+            "stClass": "Btech",
+            "stResult": "P",
+            "stGrade": "B",
+            "gender" : "F"
+        },
+        {
+            "stName": "Sahi",
+            "stClass": "4th",
+            "stResult": "P",
+            "stGrade": "B",
+            "gender" : "F"
+        },
+        {
+            "stName": "Srini",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": "A+++",
+            "gender" : "F"
+        },
+        {
+            "stName": "Suresh2",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": "A+++",
+            "gender" : "F"
+        },
+        {
+            "stName": "Sravanthi2",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": "A+++",
+            "gender" : "F"
+        },
+        {
+            "stName": "Sahishna",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": "A+++",
+            "gender" : "F"
+        },
+        {
+            "stName": "Srini2",
+            "stClass": "LKG",
+            "stResult": "P",
+            "stGrade": "A+++",
+            "gender" : "F"
+        }
+    ]
+}

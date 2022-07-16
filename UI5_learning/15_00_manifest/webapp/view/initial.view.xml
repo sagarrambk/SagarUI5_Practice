@@ -1,0 +1,32 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc"
+      xmlns = "sap.m"
+      xmlns:layout = "sap.ui.layout"
+      controllerName = "home.controller.initial">
+
+<Page title="This is initial Page">
+<headerContent>
+
+</headerContent>
+
+<content>
+			<HBox>
+				<Button text="Login"
+                        type = "Accept"
+						press="onLogin"
+						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Button>
+				<Button text="Register"
+						press="onRegister"
+						ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Button>
+            </HBox>
+
+</content>
+</Page>
+</mvc:View>

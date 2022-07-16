@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Manifest file</title>
+<header>
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-resourceroots='{
+               "home" : "./"
+           }'>
+
+        </script>
+
+
+    <script>
+        var oComponent = new sap.ui.core.ComponentContainer({
+            name: "home"
+        });
+        oComponent.placeAt("container")
+    </script>
+
+</header>
+
+<body>
+    <div id="container"> </div>
+</body>
+
+</html>

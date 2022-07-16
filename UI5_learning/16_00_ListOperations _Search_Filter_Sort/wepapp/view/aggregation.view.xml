@@ -1,0 +1,19 @@
+<mvc:View controllerName="home.controller.aggregation"
+xmlns = "sap.m"
+xmlns:mvc = "sap.ui.core.mvc"
+xmlns:core = "sap.ui.core"
+xmlns:form = "sap.ui.layout.form"
+xmlns:table = "sap.ui.table">
+<List items ="{/stD}" id="idList">
+    <ObjectListItem
+    intro = "{stH/stN}"
+    title = "{stName}"
+    type="Active"
+    number = "{stClass}"
+    numberUnit="{gender}"
+    press=".onListItemPress"
+    >
+    </ObjectListItem>
+
+</List>
+</mvc:View>

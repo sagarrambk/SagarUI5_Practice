@@ -1,0 +1,5 @@
+in this example, just implemented Manifest file and model data also mentioned in this.
+
+
+https://theia-workspaces-ws-cbb5v.us10.trial.applicationstudio.cloud.sap/mini-browser/home/user/projects/SagarUI5_Practice/UI5_learning/15_00_manifest/webapp/index.html
+
