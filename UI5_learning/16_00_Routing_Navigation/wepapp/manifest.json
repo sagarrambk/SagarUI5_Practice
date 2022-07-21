@@ -69,13 +69,23 @@
                 "viewType": "XML",
                 "controlId": "appCon"
             },
-            "routes": [{
+            "routes": [
+                {
                     "name": "default",
-                    "target": ["mPage", "dPage"],
+                    "target": [
+                        "mPage",
+                        "dPage"
+                    ],
                     "pattern": ""
-                }],
+                },
+                {
+                    "name": "item",
+                    "target": ["mPage","dPage"],
+                    "pattern": "stD/{index}"
+                }
+            ],
             "targets": {
-                "mPage":{
+                "mPage": {
                     "viewName": "mscreen",
                     "controlAggregation": "masterPages"
                 },
