@@ -16,7 +16,7 @@ sap.ui.define([
             debugger;
             //this.router.navTo("item");
             var oSelRecord = oEvent.getParameter("listItem").getBindingContextPath().split("/")[2];
-            this.Router.navTo("stD", {
+            this.Router.navTo("item", {
                 index: oSelRecord
             });
         }
